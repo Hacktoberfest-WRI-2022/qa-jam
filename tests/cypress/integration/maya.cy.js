@@ -1,5 +1,9 @@
 describe('empty spec', () => {
-  it('passes', () => {
-    cy.visit('http://127.0.0.1:8000/')
-  })
+  it("Login Page Can Be Open and have correct specification", () => {
+        cy.visit("/");
+        cy.get('[data-id="title"]').should("have.text", "Login");
+        cy.get('[data-id="label-email"]').should("have.text", "E-mail");
+        cy.get('[data-id="label-password"]').should("have.text", "Password");
+        cy.get('[data-id="btn-login"]').contains("Login").and("be.enabled");
+    });
 })
