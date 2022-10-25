@@ -9,10 +9,10 @@ module.exports = defineConfig({
     screenshotsFolder: "tests/cypress/screenshots",
     fixturesFolder: "tests/cypress/fixture",
     e2e: {
-        setupNodeEvents(on, config) {
-            return require("./tests/cypress/plugins/index.js")(on, config);
-        },
-        baseUrl: "http://localhost:8080",
+        // setupNodeEvents(on, config) {
+        //     return require("./tests/cypress/plugins/index.js")(on, config);
+        // },
+        baseUrl: "http://localhost:8000",
         specPattern: "tests/cypress/integration/**/*.cy.{js,jsx,ts,tsx}",
         supportFile: "tests/cypress/support/index.js",
     },
