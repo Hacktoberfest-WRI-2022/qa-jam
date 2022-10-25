@@ -55,9 +55,6 @@ describe('user can manipulate data', () => {
     cy.get('[data-id="avatar"]').click();
     cy.get('[data-id="btn-logout"]').click();
   })
-  // catatan
-  // Berhasil Delete Data 
-  // Berhasil Update Data 
 
   it('user can delete data', () =>{
     cy.visit("/");
