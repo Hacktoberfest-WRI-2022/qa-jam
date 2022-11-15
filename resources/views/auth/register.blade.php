@@ -76,8 +76,7 @@
                                                 <label for="password" class="d-block">Password</label>
                                                 <input id="password" type="password" name="password"
                                                     class="form-control @error('password') is-invalid @enderror"
-                                                    value="{{ old('password') }}" placeholder="Masukkan Password"
-                                                    data-indicator="pwindicator">
+                                                    value="{{ old('password') }}" placeholder="Masukkan Password">
                                                 @error('password')
                                                     <div class="invalid-feedback">
                                                         {{ $message }}
@@ -141,7 +140,6 @@
     <script src="../assets/js/custom.js"></script>
 
     <!-- Page Specific JS File -->
-    <script src="../assets/js/page/auth-register.js"></script>
 </body>
 
 </html>
