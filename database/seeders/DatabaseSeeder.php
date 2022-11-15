@@ -20,5 +20,7 @@ class DatabaseSeeder extends Seeder
 
         User::factory(10)->create();
         Price::factory(10)->create();
+        //call the user seeder
+        $this->call(UserSeeder::class);
     }
 }
